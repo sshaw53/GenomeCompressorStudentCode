@@ -25,7 +25,17 @@ public class GenomeCompressor {
      */
     public static void compress() {
 
-        // TODO: complete the compress() method
+        int[] genomeKeys = new int[256];
+        genomeKeys['A'] = 0;
+        genomeKeys['C'] = 1;
+        genomeKeys['T'] = 2;
+        genomeKeys['G'] = 3;
+
+        String toCompress = BinaryStdIn.readString();
+        int len = toCompress.length();
+        for (int i = 0; i < len; i++) {
+            BinaryStdOut.write(genomeKeys[toCompress.charAt(i)],2);
+        }
 
         BinaryStdOut.close();
     }

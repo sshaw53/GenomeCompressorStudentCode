@@ -18,25 +18,30 @@
  *  @author Zach Blick
  */
 public class GenomeCompressor {
-
     /**
      * Reads a sequence of 8-bit extended ASCII characters over the alphabet
      * { A, C, T, G } from standard input; compresses and writes the results to standard output.
      */
     public static void compress() {
-
+        // Created a map that directly translates to the different integer values
         int[] genomeKeys = new int[256];
         genomeKeys['A'] = 0;
         genomeKeys['C'] = 1;
         genomeKeys['T'] = 2;
         genomeKeys['G'] = 3;
 
+        // Read in the sequence
         String toCompress = BinaryStdIn.readString();
         int len = toCompress.length();
+
+        // Write out the length of the string to the beginning of the file to avoid extra padding, using 32-bit because
+        // we can assume that it's less than 2 billion
+        BinaryStdOut.write(len, 31);
+
+        // Writing in the compressed characters in  2-bit because the values can only be from 0-3
         for (int i = 0; i < len; i++) {
             BinaryStdOut.write(genomeKeys[toCompress.charAt(i)],2);
         }
-
         BinaryStdOut.close();
     }
 
@@ -44,9 +49,24 @@ public class GenomeCompressor {
      * Reads a binary sequence from standard input; expands and writes the results to standard output.
      */
     public static void expand() {
+        // Other map to go back from numbers to characters
+        char[] genomeDecode = new char[4];
+        genomeDecode[0] = 'A';
+        genomeDecode[1] = 'C';
+        genomeDecode[2] = 'T';
+        genomeDecode[3] = 'G';
 
-        // TODO: complete the expand() method
+        // Get the length
+        int len = BinaryStdIn.readInt(31);
+        int count = 0;
 
+        // While we aren't at the padded 0's yet, keep reading in the 2-bit info and convert from int to char using
+        // the map
+        while (count < len * 2) {
+            int c = BinaryStdIn.readInt(2);
+            BinaryStdOut.write(genomeDecode[c]);
+            count += 2;
+        }
         BinaryStdOut.close();
     }
 

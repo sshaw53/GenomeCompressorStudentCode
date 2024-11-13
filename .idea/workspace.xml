@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b73ab661-840a-4b64-b072-3764519be013" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Genome Compressor Student Code.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinaryStdIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinaryStdOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BlickCompressor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BlickTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DumpBinary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GenomeCompressor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/genomeCheck.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/genomeTest.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/virusExpanded.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WORK_LOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/WORK_LOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenomeCompressor.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenomeCompressor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenomeCompressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenomeCompressor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/virus.bin" beforeDir="false" afterPath="$PROJECT_DIR$/src/virus.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +20,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "sshaw53"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/sshaw53/GenomeCompressorStudentCode.git",
+    "accountId": "5967f974-bad8-47c7-ace0-e743b994895e"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2kcGqQKT0vkDTJ0bFSJOEbWqppH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -45,7 +48,8 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/sierrashaw/IdeaProjects/GenomeCompressorStudentCode"
   }
 }]]></component>
   <component name="RecentsManager">

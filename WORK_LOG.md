@@ -1,9 +1,10 @@
 Name: YOUR NAME HERE
 
-| Date   |     Time      |                                                                        Update |
-|:-------|:-------------:|------------------------------------------------------------------------------:|
-| Nov 12 | 11:40-11:55am | I decided to try to set each letter, A C T G equal to a small number 1 2 3 4. |
-|        |               |                                                                               |
+| Date   |     Time      |                                                                                                                                                                                                                                                                                                                           Update |
+|:-------|:-------------:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Nov 12 | 11:40-11:55am |                                                                                                                                                                                                                                                    I decided to try to set each letter, A C T G equal to a small number 1 2 3 4. |
+| Nov 12 |  2:15-2:45pm  |                                                                                                                                                                I can't seem to figure out why my code keeps writing out an extra A at the end of the String, but I now got my system to work in general and I'm using less data. |
+| Nov 13 | 10:10-10:40pm | I learned about the padding that is added by the zero to get a full byte of data, so to get around the padded zeros that were giving me an extra A, I added the number of characters at the beginning of the string so that I would only traverse through the length of characters and avoid the added characters of the String. |
 
 
 To add a new row to the table, click into a cell and then hit shift-enter.

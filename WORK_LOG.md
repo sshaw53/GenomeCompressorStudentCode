@@ -5,6 +5,7 @@ Name: YOUR NAME HERE
 | Nov 12 | 11:40-11:55am |                                                                                                                                                                                                                                                    I decided to try to set each letter, A C T G equal to a small number 1 2 3 4. |
 | Nov 12 |  2:15-2:45pm  |                                                                                                                                                                I can't seem to figure out why my code keeps writing out an extra A at the end of the String, but I now got my system to work in general and I'm using less data. |
 | Nov 13 | 10:10-10:40pm | I learned about the padding that is added by the zero to get a full byte of data, so to get around the padded zeros that were giving me an extra A, I added the number of characters at the beginning of the string so that I would only traverse through the length of characters and avoid the added characters of the String. |
+| Nov 14 |  9:20-9:40am  |                                                           Realized I couldn't use 31 bits to express the length of the file because Sedgewick's BinaryStdOut.write(int x, int r) function does not allow for me to use 31 bits because it could express a negative number, so I changed the length to be represented in 32 bits. |
 
 
 To add a new row to the table, click into a cell and then hit shift-enter.

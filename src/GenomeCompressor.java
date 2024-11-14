@@ -36,7 +36,7 @@ public class GenomeCompressor {
 
         // Write out the length of the string to the beginning of the file to avoid extra padding, using 32-bit because
         // we can assume that it's less than 2 billion
-        BinaryStdOut.write(len, 31);
+        BinaryStdOut.write(len);
 
         // Writing in the compressed characters in  2-bit because the values can only be from 0-3
         for (int i = 0; i < len; i++) {
@@ -57,15 +57,15 @@ public class GenomeCompressor {
         genomeDecode[3] = 'G';
 
         // Get the length
-        int len = BinaryStdIn.readInt(31);
+        int len = BinaryStdIn.readInt(32);
         int count = 0;
 
         // While we aren't at the padded 0's yet, keep reading in the 2-bit info and convert from int to char using
         // the map
-        while (count < len * 2) {
+        while (count < len) {
             int c = BinaryStdIn.readInt(2);
             BinaryStdOut.write(genomeDecode[c]);
-            count += 2;
+            count += 1;
         }
         BinaryStdOut.close();
     }
